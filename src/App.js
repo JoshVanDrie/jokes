@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import './style.css';
+import Joke from './components/Joke'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <Joke
+                setup="I got my daughter a fridge for her birthday."
+                punch="I can't wait to see her face light up when she opens it."
+            />
+            <Joke
+                setup="How did the hacker escape the police?"
+                punch="He just ransomware!"
+            />
+            <Joke
+                setup="Why don't pirates travel on mountain roads?"
+                punch="Scurvy."
+            />
+            <Joke
+                setup="Why do bees stay in the hive in the winter?"
+                punch="Swarm."
+            />
+            <Joke
+                setup="What's the best thing about Switzerland?"
+                punch="I don't know, but the flag is a big plus!"
+            />
+        </div>
+    );
 }
 
 export default App;
